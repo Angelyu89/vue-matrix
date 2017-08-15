@@ -1,43 +1,41 @@
 <template>
-  <div class="">
-    attribute
-    <headbar></headbar>
+  <div class="main">
+    <Headbar></Headbar>
+    <div class="content">
+      <sidebar></sidebar>
+      <div class="right-con">
+        <router-view></router-view>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-// import { Headbar } from './Headbar'
+import Headbar from './Headbar'
+import Sidebar from './Sidebar'
 
 export default {
   name: 'hello',
   components: {
-    // Headbar
-  },
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
+    Headbar,
+    Sidebar
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
+  .main{
+    height: 100%;
+  }
+  .content{
+    height: 100%;
+    margin-top: -48px;
+    padding-top: 48px;
+    display: flex;
+  }
+  .right-con{
+    height: 100%;
+    flex: 1;
+  }
 </style>

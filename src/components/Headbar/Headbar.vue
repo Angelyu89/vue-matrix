@@ -6,13 +6,13 @@
         <a href="a">首页</a>
       </li>
     </ul>
-    <div class='logout'>退出登录</div>
+    <div class='logout'>退出</div>
   </header>
 </template>
 
 <script>
   export default {
-    name: 'headbar',
+    name: 'Headbar',
     methods: {
     }
   }
@@ -30,8 +30,7 @@
       width: 260px;
       font-size: 16px;
       letter-spacing: 1px;
-      line-height: 50px;
-      padding-left: 60px;
+      line-height: 48px;
     }
     .nav{
       flex: 1;
@@ -42,10 +41,11 @@
         width: 120px;
         text-align: center;
         a{
-          height: 50px;
+          height: 48px;
           display: block;
           font-size: 16px;
-          line-height: 50px;
+          line-height: 48px;
+          color: #FFF;
         }
       }
       .left{
@@ -91,7 +91,7 @@
     .logout{
       cursor: pointer;
       font-size: 14px;
-      line-height: 50px;
+      line-height: 48px;
       padding-right: 20px;
     }
   }
