@@ -13,7 +13,6 @@ export default new Router({
   routes: [
     {
       path: '/',
-      // redirect: '',
       name: 'Hello',
       component: Hello,
       children: [
@@ -34,10 +33,5 @@ export default new Router({
       name: 'Hello2',
       component: Hello2
     }
-    // {
-    //   path: '/Headbar',
-    //   name: 'Headbar',
-    //   component: Headbar
-    // }
   ]
 })

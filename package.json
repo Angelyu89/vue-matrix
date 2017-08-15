@@ -1,7 +1,7 @@
 {
-  "name": "y",
+  "name": "vue-matrix",
   "version": "1.0.0",
-  "description": "y",
+  "description": "a vue project to show the most commonly used components.",
   "author": "believezjp <1811886228@qq.com>",
   "private": true,
   "scripts": {

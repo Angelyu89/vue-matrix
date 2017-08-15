@@ -4,7 +4,9 @@
     <div class="content">
       <sidebar></sidebar>
       <div class="right-con">
-        <router-view></router-view>
+        <transition  name="fade" mode="out-in"">
+          <router-view></router-view>
+        </transition>
       </div>
     </div>
   </div>
@@ -37,5 +39,13 @@ export default {
   .right-con{
     height: 100%;
     flex: 1;
+  }
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: all .3s ease;
+  }
+  .fade-enter,
+  .fade-leave-active {
+    opacity: 0;
   }
 </style>

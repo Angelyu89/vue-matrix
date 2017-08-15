@@ -1,6 +1,6 @@
 <template>
   <div class="sidebar">
-    <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" theme="light">
+    <el-menu default-active="2" class="el-menu-vertical-demo" :router='true' @open="handleOpen" @close="handleClose" theme="light">
       <el-submenu index="1">
         <template slot="title">导航一</template>
         <el-menu-item-group title="分组一">
@@ -23,15 +23,17 @@
           <el-menu-item index="1-4-1">选项1</el-menu-item>
         </el-submenu>
       </el-submenu>
-      <el-menu-item index="2">
-        <router-link to='/Hello2'>
+      <el-menu-item index="/hello2">
+        Hello2
+        <!--<router-link to='/Hello2'>
           Hello2
-        </router-link>
+        </router-link>-->
       </el-menu-item>
-      <el-menu-item index="3">
-        <router-link to='/User'>
+      <el-menu-item index="/user">
+        User
+        <!--<router-link to='/User'>
           User
-        </router-link>
+        </router-link>-->
       </el-menu-item>
     </el-menu>
   </div>
